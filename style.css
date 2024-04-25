@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2D3142;
+}
+
+.aldeaDeLaHoja {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.ninja {
+    border: .1rem solid;
+}
+
+.ninja_nombre {
+    text-align: center;
+}
+
+.ninja_foto {
+    width: 150px;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #4F5D75;
+    }
+
+    .aldeaDeLaHoja{
+        flex-direction: column;
+    }
+
+    .ninja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        background-color: #BFC0C0;
+    }
+}
